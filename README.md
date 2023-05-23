@@ -2,7 +2,7 @@
 This is a BOLT5 (Symfony 5.4) extension.
 The role of the extension is to provide classes which are modifying field(s) values.
 
-As a use case, we can mutate one field's or a field collection's value(s) before saving a content type.
+As a use case, we can mutate one field's or a field collection's value(s) before saving a content type. The processor classes used are meant to encrypt the field values using sodium library's features.
 
 To initiate the mutations we can use a Symfony standard subscriber like below:
 
