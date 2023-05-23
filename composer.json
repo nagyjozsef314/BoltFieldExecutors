@@ -1,0 +1,39 @@
+{
+    "name": "nj/bolt-field-executors",
+    "description": "This extension is a collection of custom interactor classes which can modify the value of the fields.",
+    "type": "bolt-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "NJ",
+            "email": "nagyjozsef314@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0"
+    },
+    "require-dev": {
+        "bolt/core": "^5.0.0",
+        "phpstan/phpstan": "^1.10",
+        "phpmetrics/phpmetrics": "^2.8",
+        "paragonie/sodium_compat": "^1.20",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nj\\BoltFieldExecutors\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "entrypoint": "Nj\\BoltFieldExecutors\\Extension"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true,
+            "drupol/composer-packages": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}

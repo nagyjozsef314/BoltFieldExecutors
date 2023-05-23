@@ -1,0 +1,6 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot cast array\\|bool\\|float\\|int\\|string\\|UnitEnum\\|null to string\\.$#"
+			count: 1
+			path: src/Utils/Encryption/EncryptionHelper.php
